@@ -1,7 +1,7 @@
-import './App.css';
+import './stickyNotes.css';
 import { dummyNotesList } from "./constants"; // Import the dummyNotesList from the appropriate module
 import { HeartButton, FavList } from './hooksExercise';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { ThemeContext, themes } from "./ThemeContext";
 import { Label, Note } from './types';
 
