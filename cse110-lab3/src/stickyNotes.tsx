@@ -80,6 +80,7 @@ export const StickyNotes = () => {
 
                     <div>
                         <textarea
+                            placeholder="Note Content"
                             onChange={(event) =>
                                 setCreateNote({ ...createNote, content: event.target.value })}
                             required>
@@ -120,7 +121,7 @@ export const StickyNotes = () => {
 
                             <div className="notes-header">
                                 <HeartButton likedCb={() => addFav(favTitles, note.title)} ></HeartButton>
-                                <button onClick={() => deleteNote(note.id)} >x</button>
+                                <button  data-testid= {note.id} onClick={() => deleteNote(note.id)} >x</button>
                             </div>
 
                             <h2 contentEditable='true'> {note.title} </h2>
